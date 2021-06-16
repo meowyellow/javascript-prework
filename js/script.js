@@ -37,22 +37,17 @@ const displayResult = function (argComputerMove, argPlayerMove) {
   else if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce') {
     printMessage('Przegrywasz')
   }
-  
+
   else if (argComputerMove == 'papier' && argPlayerMove == 'kamień') {
     printMessage('Przegrywasz!')
   }
   else if (argComputerMove == 'nożyce' && argPlayerMove == 'papier') {
-  printMessage('Przegrywasz!')
+    printMessage('Przegrywasz!')
   }
-  else  {
-      printMessage('Ty Wygrywasz');
-      
+  else {
+    printMessage('Ty Wygrywasz');
   }
-
-  
-
 }
-
 console.log('Wylosowana liczba to: ' + randomNumber);
 displayResult(computerMove, playerMove);
 
