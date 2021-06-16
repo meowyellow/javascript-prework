@@ -28,30 +28,29 @@ let computerMove = getMoveName(randomNumber);
 const displayResult = function (argComputerMove, argPlayerMove) {
   printMessage('Komputer zagrał ' + argComputerMove + ', Ja zagrałem ' + argPlayerMove);
 
-  if (argPlayerMove == 'Nieznany ruch') {
-    printMessage('Nieznany ruch');
+  if (argPlayerMove == 'nieznany ruch') {
+    printMessage('błąd');
   }
   else if (argComputerMove == argPlayerMove) {
     printMessage('Remis');
   }
-  else if (argComputerMove == 'kamień' && argPlayerMove == 'papier') {
-    printMessage('Ty Wygrywasz');
-  }
   else if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce') {
     printMessage('Przegrywasz')
   }
-  else if (argComputerMove == 'papier' && argPlayerMove == 'nożyce') {
-    printMessage('Ty Wygrywasz')
-  }
+  
   else if (argComputerMove == 'papier' && argPlayerMove == 'kamień') {
     printMessage('Przegrywasz!')
   }
   else if (argComputerMove == 'nożyce' && argPlayerMove == 'papier') {
-    printMessage('Przegrywasz!')
+  printMessage('Przegrywasz!')
   }
-  else if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
-    printMessage('Ty Wygrywasz')
+  else  {
+      printMessage('Ty Wygrywasz');
+      
   }
+
+  
+
 }
 
 console.log('Wylosowana liczba to: ' + randomNumber);
