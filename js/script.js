@@ -21,7 +21,7 @@
         printMessage('nieznany ruch');
         return 'nieznany ruch';
       }
-     
+
     }
     const randomNumber = Math.floor(Math.random() * 3 + 1);
     console.log('Gracz wpisał: ' + playerInput);
